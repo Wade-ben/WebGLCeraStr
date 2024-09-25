@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | CeraStribley</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1900 height=1000 tabindex="-1" style="width: 1900px; height: 1000px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1900 height=1000 tabindex="-1" style="width: 1900px; height: 1000px; background: #808080"></canvas>
     <script src="Build/Builds.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Builds.data.gz",
-        frameworkUrl: "Build/Builds.framework.js.gz",
-        codeUrl: "Build/Builds.wasm.gz",
+        dataUrl: "Build/Builds.data",
+        frameworkUrl: "Build/Builds.framework.js",
+        codeUrl: "Build/Builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CeraStribley",
